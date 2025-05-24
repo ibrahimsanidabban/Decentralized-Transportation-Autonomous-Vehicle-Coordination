@@ -1,0 +1,29 @@
+[project]
+name = 'Decentralized-Transportation-Autonomous-Vehicle-Coordination'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.incident-response]
+path = 'contracts/incident-response.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.traffic-optimization]
+path = 'contracts/traffic-optimization.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.vehicle-verification]
+path = 'contracts/vehicle-verification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
